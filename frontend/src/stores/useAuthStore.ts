@@ -112,7 +112,7 @@ export const useAuthStore = create<AuthState>()(
           }
         } catch (error) {
           console.error(error);
-          toast.error("Login state is expired. please, Sign in oneMore!");
+          // toast.error("Login state is expired. please, Sign in oneMore!");
           get().clearState();
         } finally {
           set({ loading: false });
